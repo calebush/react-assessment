@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import {Card, CardContent} from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import {useNavigate} from "react-router-dom";
 const CreateEvent = () =>{
     const[disableSubmit,setDisableSubmit]=useState(true);
     const [allValues, setAllValues] = useState({
@@ -13,6 +14,8 @@ const CreateEvent = () =>{
         location:'',
         photo:'',
     });
+    let navigate = useNavigate();
+
     const handleChange = (e:any) => {
         e.preventDefault()
         setAllValues(prevValues => {
@@ -35,16 +38,15 @@ const CreateEvent = () =>{
             photo:allValues.photo,
         }
         console.log("Input values", inputValues)
+        navigate("/events")
     }
     return(
         <>
             <Grid container spacing={4} justifyContent={"center"}>
                 <Grid item xs={6}><br/>
-                    {/*<h5 style={{textAlign:"center"}}>Create an Event</h5>*/}
                             <Card variant="outlined" style={{borderRadius:"15px"}}>
                                 <CardContent>
                                     <h2>Create an Event</h2>
-                                    {/*<p>Already have an account? <Link>Sign in</Link></p>*/}
                                     <div className="form">
                                         <Grid container spacing={4}>
                                             <Grid item xs={6}>

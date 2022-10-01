@@ -1,8 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import {setupListeners} from "@reduxjs/toolkit/query";
+import eventReducer from '../features/events/eventSlice'
 
 export const store = configureStore({
   reducer: {
+    event: eventReducer,
+
   },
   //middleware to enable caching, invalidation, polling, and other useful features of rtk-query.
   middleware: (getDefaultMiddleware)=>
