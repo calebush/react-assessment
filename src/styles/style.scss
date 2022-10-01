@@ -1,0 +1,72 @@
+.button{
+background-color: #738a9d !important;
+  width: 15%;
+  align-content: center;
+};
+
+.card{
+  padding-top: 30px;
+};
+
+.listItem{
+  background-color: #dfe1e3 !important;
+};
+.textField{
+  width: 70%;
+  padding-right: 10% !important;
+};
+
+.avatar{
+  background-color: #ffff;
+}
+
+.list{
+  background-color: #dfe1e3;
+  &:hover{
+    background-color: #738a9d;
+  }
+}
+.textArea{
+  font-family: "Times New Roman";
+  font-size: 20px;
+  width: 100%;
+}
+
+.landing-page{
+  background: #DDDDDD;
+}
+
+.landing-image{
+  height: 775.6912841796875px;
+  width: 440px;
+  left: 170px;
+  top: 100px;
+  border-radius: 35.15217590332031px;
+}
+
+.landingText{
+  left: 778px;
+  top: 306px;
+  right: 160.09px;
+  bottom: 484px;
+}
+
+.text{
+  position: absolute;
+  width: 573.91px;
+  height: 192px;
+  left: 0px;
+  top: 0px;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 300px;
+  line-height: 64px;
+
+  text-align: right;
+
+  color: #240D57;
+}
+
+
